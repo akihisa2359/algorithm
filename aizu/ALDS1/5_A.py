@@ -13,5 +13,6 @@ def combo(i, num):
 
 for i in range(A):
   res = "yes" if combo(0, m[i]) else "no"
+
   print(res)
   
