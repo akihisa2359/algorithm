@@ -6,10 +6,10 @@ O = int(input())
 def combo(i, m):
   if (m == 0):
     return True
-  if (m < 0 or i == N):
+  if (m < 0 or i == N or sum(choices[i:]) < m):
     return False
   
-  return combo(i + 1, m) or combo(i + 1, m - A[i])
+  return combo(i + 1, m) or combo(i + 1, m - choices[i])
 
 for i in range(O):
   if combo(0, A[i]):
