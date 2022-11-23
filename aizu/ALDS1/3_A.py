@@ -4,5 +4,4 @@ symbol = None
 
 for i in range(len(A)):
 while symbol in ["+", "-", "*"]:
-
-
+  print('hoge')
